@@ -1,0 +1,13 @@
+<template>
+    <!-- Lightning card to display account location -->
+    <lightning-card title="Account Location" icon-name="utility:location">
+        <div class="slds-m-around_medium">
+            <!-- Button to fetch location -->
+            <lightning-button label="Get" onclick={getLocation}></lightning-button>
+            <!-- Display latitude, longitude, and account name -->
+            <p>Latitude: {latitude}</p>
+            <p>Longitude: {longitude}</p>
+            <p>Name: {Namei}</p>
+        </div>
+    </lightning-card>
+</template>

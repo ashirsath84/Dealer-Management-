@@ -1,0 +1,24 @@
+<template>
+    <!-- RazorPay Payment Form -->
+    <lightning-card title="Product Billing By Razor Pay" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <!-- Input fields for Amount, Currency, Customer Name, Email, and Contact Number -->
+                    <lightning-input label="Amount" required="required" onchange={amountMethod}></lightning-input>
+                    <lightning-input label="Currency" onchange={currencyMethod}></lightning-input>
+                    <lightning-input label="Customer Name" onchange={descpMethod}></lightning-input>
+                </div>
+                <div class="slds-col">
+                    <lightning-input label="Email" onchange={emailtMethod}></lightning-input>
+                    <lightning-input label="Contact Number" onchange={contactMethod}></lightning-input>
+                </div>
+            </div>
+
+            <!-- Button to initiate the payment -->
+            <div class="slds-align_absolute-center slds-m-top_medium">
+                <lightning-button variant="brand" label="Pay Now" onclick={handlePayment}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

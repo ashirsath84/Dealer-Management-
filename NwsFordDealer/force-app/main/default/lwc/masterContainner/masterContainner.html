@@ -1,0 +1,17 @@
+<template>
+    <!-- Container for dealer search and result components -->
+    <div class="slds-var-m-bottom_small">
+        <!-- Lightning card for dealer search -->
+        <lightning-card title="">
+            <!-- Dealer search component -->
+            <c-dealer-search onselecteddealertype={handleSelectedDealerTypeEvent}></c-dealer-search>
+        </lightning-card>
+    </div>
+    <div class="slds-var-m-vertical_small">
+        <!-- Lightning card for available dealers -->
+        <lightning-card title="Available Dealers">
+            <!-- Dealer search result component -->
+            <c-dealer-search-result channel-dealer-type-id={selectedDealerTypeId}></c-dealer-search-result>
+        </lightning-card>
+    </div>
+</template>
